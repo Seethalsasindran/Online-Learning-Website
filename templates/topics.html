@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    
+    <link rel="stylesheet" href="static/css/topic.css">
+    
+</head>
+<body>
+  <h1 style="position: relative;bottom: 21cm; margin-left: 0cm;font-family: Georgia, 'Times New Roman', Times, serif;color: deeppink;">Electron</h1>
+  <h2 style="position: relative;bottom: 18cm;right: 3.5cm;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 16px;"><a style="text-decoration: none;color: black;cursor: pointer;" href="{% url 'myfunc' %}">Home</a></h2>
+  <h3 style="position: relative;bottom: 17cm;right: 4.8cm;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 16px;"><a style="text-decoration: none;color: black;cursor: pointer;" href="{% url 'myfunc3' %}">About</a></h3>
+  <h4 style="position: relative;bottom: 16cm;right: 6.1cm;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 16px;"><a style="text-decoration: none;color: black;cursor: pointer;" href="{% url 'myfunc4' %}">Contact</a></h4>
+  <h5 style="position: relative;bottom: 15cm;right: 7.8cm;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 16px;"><a style="text-decoration: none;color: black;cursor: pointer;" href="{% url 'myfunc1' %}">Signup</a></h5>
+  <h6 style="position: relative;bottom: 14cm;right: 9.3cm;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 16px;"><a style="text-decoration: none;color: black;cursor: pointer;" href="{% url 'myfunc2' %}">Login</a></h6>
+  
+  
+  
+  
+  
+  
+
+
+    <div style="margin-bottom:5cm;margin-left: -4cm;" class="container">
+      {% for sub in topics1 %}
+        <div  class="card">
+          <div class="card-header">
+            <a href="{% url 'myfunc6' sub.id %}"><img src="{{sub.image.url}}"></a>
+          </div>
+          <div class="card-body">
+            <span class="tag tag-teal">{{sub.title}}</span><br><br>
+           
+            <p style="font-family:sans-serif;text-align:justify;font-size: 15px;">
+              {{sub.short_des}}
+            </p>
+            
+            </div>
+          </div>
+          {% endfor %}
+          
+        </div>
+        
+       
+        </div>
+        <br><br><br><br><br><br>
+
+       
+        
+
+        
+</body>
+</html>

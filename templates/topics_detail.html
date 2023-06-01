@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/topicsdetail.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h3 style="color:deeppink;
+            font-size: 28px;
+            letter-spacing: 1px;
+            cursor: pointer;">Electron</h3>
+            <ul>
+                <li><a href="{% url 'myfunc' %}">Home</a></li>
+                <li><a href="{% url 'myfunc3' %}">About Us</a></li>
+                <li><a href="{% url 'myfunc5' %}">Tutorials</a></li>
+                <li><a href="{% url 'myfunc4' %}">Contact Us</a></li>
+            </ul>
+            <a href="{% url 'myfunc1' %}" class="btn">Sign Up</a>
+            <a href="{% url 'myfunc2' %}" class="btn">Login</a>
+
+        </nav>
+
+    </div>
+    
+    
+
+
+    <h1 style="margin-top: 0;">{{material.title}}</h1>
+    <P>{{material.detail_des}}</P><br><br>
+    <img  src="{{material.image.url}}" alt=""><br><br>
+
+    <h2>{{material.title1}}</h2>
+    <P>{{material.detail_des1}}</P><br><br>
+    <img class="center" src="{{material.image1.url}}" alt=""><br><br>
+
+    <h2>{{material.title2}}</h2>
+    <P>{{material.detail_des2}}</P><br><br>
+    <img class="center" src="{{material.image2.url}}" alt=""><br><br>
+
+    <h2>{{material.title3}}</h2>
+    <P>{{material.detail_des3}}</P><br><br>
+    <img class="center" src="{{material.image3.url}}" alt=""><br><br>
+
+    <h2>{{material.title4}}</h2>
+    <P>{{material.detail_des4}}</P><br><br>
+    <img class="center" src="{{material.image4.url}}" alt=""><br><br>
+
+    <h2>{{material.title5}}</h2>
+    <P>{{material.detail_des5}}</P><br><br>
+    <img class="center" src="{{material.image5.url}}" alt=""><br><br>
+    <br><br><br><br>
+
+    <a style="position:relative;left: 14cm;color: white;background-color: cornflowerblue;" href="{% url 'myfunc2' %}" class="btn">Read More</a>
+
+    <div class="footer">
+        <div class="col-1">
+            <h5>USEFUL LINKS</h5>
+            <a href="{% url 'myfunc' %}">Home</a>
+            <a href="{% url 'myfunc3' %}">About Us</a>
+            <a href="">Tutorials</a>
+            <a href="{% url 'myfunc4' %}">Contact Us</a>
+            <a href="{% url 'myfunc1' %}">Sign Up</a>
+            <a href="{% url 'myfunc2' %}">Login</a>
+
+        </div>
+        <div class="col-2">
+            <h5>NEWSLETTER</h5>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input type="email" name="Email" id="" placeholder="Your email address" required><br>
+                <button type="submit">Get in touch</button>
+            </form>
+
+        </div>
+        <div class="col-3">
+            <h5>CONTACT</h5><br>
+            <h5>Thrissur, Kerala <br>India <br> <br>adminelectron@gmail.com</h5>
+            
+
+        </div>
+
+
+    </div>
+</body>
+</html>

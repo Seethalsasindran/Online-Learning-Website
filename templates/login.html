@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/css/login.css">
+    <style>
+      body{
+    margin: 0;
+    padding: 0;
+    background-image:url(https://images.unsplash.com/photo-1676875985851-67ccf400cda5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5NHxibzhqUUtUYUUwWXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+    
+    
+  }
+      
+      .hero{
+  height: 15vh;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+  position: relative;right: 2cm;
+}
+nav ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  font-size: 18px;
+}
+nav ul li a:hover{
+  color: #f9004d;
+  transition: .4s;
+}
+.footer{
+    margin-top: 450px;
+    width: 70%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    position: relative;bottom: 2cm;
+    
+    
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow:2;
+}
+.footer div h5{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+        <h3 style="color:deeppink;
+        font-size: 28px;
+        letter-spacing: 1px;
+        cursor: pointer;margin-left: 1cm;">Electron</h3>
+        <ul>
+            <li><a href="{% url 'myfunc' %}">Home</a></li>
+            <li><a href="{% url 'myfunc3' %}">About Us</a></li>
+            <li><a href="{% url 'myfunc5' %}">Tutorials</a></li>
+            <li><a href="{% url 'myfunc4' %}">Contact Us</a></li>
+        </ul>
+        
+    </nav>
+
+</div>
+
+    <div class="login">
+        <h1>Log In</h1>
+        {% if messages %} 
+        {% for msg in messages %} 
+        <h1 style="color: red;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 10pt;">{{msg}}</h1>
+        {% endfor %} 
+        {% endif %}
+        <form method="POST" action="">
+          {% csrf_token %}
+          <input type="email" class="input-box" name="email" id="" placeholder="Your Email">
+          <input type="password" class="input-box" name="password" id="" placeholder="Your Password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}" required>
+          <button type="submit">Log In</button>
+          <a href="">Forgot password?</a>
+          <p>Need an account? <a href="{% url 'myfunc1' %}">Sign Up</a></p>
+    
+    
+        </form>
+    
+      </div>
+
+      <div class="footer">
+        <div class="col-1">
+            <h5>USEFUL LINKS</h5>
+            <a href="{% url 'myfunc' %}">Home</a>
+            <a href="{% url 'myfunc3' %}">About Us</a>
+            <a href="">Tutorials</a>
+            <a href="{% url 'myfunc4' %}">Contact Us</a>
+            <a href="{% url 'myfunc1' %}">Sign Up</a>
+            <a href="{% url 'myfunc2' %}">Login</a>
+    
+        </div>
+        <div class="col-2">
+            <h5>NEWSLETTER</h5>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input style="width: 400px;
+                height: 45px;
+                border-radius: 4px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                outline: none;
+                border: none;" type="email" name="Email" id="" placeholder="Your email address" required><br>
+                <button style="background: transparent;
+                border: 2px solid #fff;
+                color: #fff;
+                border-radius: 30px;
+                padding: 10px 10px;
+                font-size: 15px;
+                cursor: pointer;width: 200px;" type="submit">Get in touch</button>
+            </form>
+    
+        </div>
+        <div class="col-3">
+            <h5>CONTACT</h5><br>
+            <h5>Thrissur, Kerala <br>India <br> <br>adminelectron@gmail.com</h5>
+            
+    
+        </div>
+    
+    
+    </div>
+
+
+
+
+</body>
+</html>

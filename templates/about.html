@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5mbq7ek8pzbpaC0HersdJRmaoxpYW0JDH-w&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 20px;
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20pt;
+            position: relative;top: 1cm;
+            color: white;
+            margin-top: -20px;
+            margin-bottom: -20px;
+            
+        }
+        p{
+            color: white;
+            position: relative;top: 2cm;
+            font-size: 15pt;
+        }
+        h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16pt;
+            position: relative;top: 2cm;
+            color: white;
+        }
+        .footer{
+    margin-top: 450px;
+    width: 70%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    position: relative;bottom: 2cm;
+    
+    
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow:2;
+}
+.footer div h5{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.hero{
+    height: 25vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
+.btn{
+    background-color: #f9004d;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transition: tranform .4s;
+    color:white;
+   
+
+}
+.btn:hover{
+    transform:scale(1.2)
+}
+.service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+h6{
+    font-size: 23px;
+    color: white;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h3 style="color:deeppink;
+            font-size: 28px;
+            letter-spacing: 1px;
+            cursor: pointer;">Electron</h3>
+            <ul>
+                <li><a href="{% url 'myfunc' %}">Home</a></li>
+                <li><a href="{% url 'myfunc3' %}">About Us</a></li>
+                <li><a href="{% url 'myfunc5' %}">Tutorials</a></li>
+                <li><a href="{% url 'myfunc4' %}">Contact Us</a></li>
+            </ul>
+            <a href="{% url 'myfunc1' %}" class="btn">Sign Up</a>
+            <a style="position: relative;left: -2cm;"  href="{% url 'myfunc2' %}" class="btn">Login</a>
+
+        </nav>
+
+    </div>
+    <h1>About Us</h1>
+
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif;font-weight: bold;font-size: 50px;color: gold;">Transformation <br> Through Education</p>
+    <p>The principal reason we continue to adapt and evolve our business model is to ensure that we are meeting our customers expectation.
+       It originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at their own pace from the comforts of their drawing rooms.
+       Every individual has the potential to create change, whether in their life, their community, or the world. The transformative power of education is what unlocks that potential.
+       Yet, access to high-quality education has been a privilege of the few. So, we realized it was a time for a seismic shift in learning. From the tried and true to the leading edge. 
+       From “for some” to “for all.” By opening the classroom through online learning, Electron empowers millions of learners to unlock their potential and become changemakers.</p><br><br>
+
+       <h2>Mission</h2>
+       <p>Our mission is to deliver Simply Easy Learning with clear, crisp, and to-the-point content on a electronics subjects without any preconditions and impediments.</p>
+
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+       <div class="service">
+        
+        <div class="box">
+            <div class="card">
+                <h6>Stand out in your field</h6>
+                <div class="pra">
+                    <p>Use the knowledge and skills you have gained to drive impact at work and grow your career.</p>
+                    
+
+                </div>
+
+            </div>
+            <div class="card">
+                <h6>Learn at your own pace</h6>
+                <div class="pra">
+                    <p>On your computer, tablet or phone, online courses make learning flexible to fit your busy life.</p>
+                    
+
+                </div>
+
+            </div>
+            <div class="card">
+                <h6>Earn a valuable credential</h6>
+                <div class="pra">
+                    <p>Showcase your key skills and valuable knowledge.</p>
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+        
+
+       </div>
+
+       <div class="footer">
+        <div class="col-1">
+            <h5>USEFUL LINKS</h5>
+            <a href="{% url 'myfunc' %}">Home</a>
+            <a href="{% url 'myfunc3' %}">About Us</a>
+            <a href="">Tutorials</a>
+            <a href="{% url 'myfunc4' %}">Contact Us</a>
+            <a href="{% url 'myfunc1' %}">Sign Up</a>
+            <a href="{% url 'myfunc2' %}">Login</a>
+
+        </div>
+        <div class="col-2">
+            <h5>NEWSLETTER</h5>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input type="email" name="Email" id="" placeholder="Your email address" required><br>
+                <button type="submit">Get in touch</button>
+            </form>
+
+        </div>
+        <div class="col-3">
+            <h5>CONTACT</h5><br>
+            <h5>Thrissur, Kerala <br>India <br> <br>adminelectron@gmail.com</h5>
+            
+
+        </div>
+
+
+    </div>
+</body>
+</html>
+</body>
+</html>

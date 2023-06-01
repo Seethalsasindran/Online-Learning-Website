@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+   
+</head>
+<body>
+    
+    <div class="menu-bar"> 
+       
+       <h4 style="color:white;font-size: 40px;text-align: center;">Electron</h4><hr style="height:1px;border-width:0;background-color:darkgray">
+        <ul>
+            
+            <li class="active"><a href="{% url 'myfunc' %}">Home</a></li>
+            <li><a href="{% url 'myfunc3' %}">About Us</a></li>
+            <li><a href="{% url 'myfunc5' %}">Tutorials</a></li>
+            <li><a href="{% url 'myfunc4' %}">Contact Us</a></li>
+            
+        </ul>
+        <button class="btn"><a href="{% url 'myfunc1' %}">Sign Up</a></button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button style="background-color: blue;" class="btn"><a href="{% url 'myfunc2' %}">Log In</a></button>
+        
+            
+            
+       
+
+    </div>
+    <br><br><br><br>
+    <h1 style="font-size: 50px;color: gold;">Learn Electronics</h1>
+    <p style="color: white;">Fast track your academic preparation with us. Ace your subjects learning with the best!</p><br><br><br><br><br><br><br><br>
+    <p 
+    style="color: white;position: relative;bottom: 14cm;text-align:justify;">
+    Are you curious about how electronics work? From amps and volts to circuits and wiring, take a deep dive into the world of electronics through online courses. 
+    <b style="color:gold">Electron</b> offers a range of learning options to build your skills and advance your career.</p><br><br><br><br>
+    <h3 style="color: gold;">Improve your subject knowledge from here</h3>
+    <p style="color: white; text-align: justify; justify-content: space-between;">
+        These free online electronics courses will teach you how this branch of physics <br> enables engineers and inventors to create solutions that focus on &nbsp; solving &nbsp; the <br>
+        world's problems and to improve lives. <br><br> This tutorial supplies basic information &nbsp; on how to use electronic components <br> and explains &nbsp; the &nbsp; logic &nbsp; behind &nbsp; solid &nbsp; state &nbsp; circuit design. 
+        Starting &nbsp; with an <br> introduction &nbsp; to semiconductor &nbsp; physics, the tutorial moves on to cover topics <br> such as resistors, capacitors,&nbsp; inductors,&nbsp; transformers,&nbsp; diodes, and transistors.
+    </p>
+    <img style="position: relative;left: 20cm;bottom: 18cm;
+    
+    
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    width: 450px;" src="static/images/2.jpg" alt="">
+
+<h6 style="position: relative;bottom: 15cm;color:gold;">Introduction to electronics</h6>
+<p style="color: white;position: relative;bottom: 14cm;text-align: justify;">It seems impossible to imagine &nbsp; life without electronics. Smartphones, computers, home &nbsp; appliances,&nbsp; security &nbsp; systems, and &nbsp; transit &nbsp; systems all run on electrical circuits. But electronics have a long history predating modern times.
+   In fact, the foundation for modern electronics dates back to 1897, when J.A. Fleming &nbsp; invented &nbsp; the vacuum diode, and later the vacuum triode to amplify electrical signals.<br><br> As daily life becomes increasingly &nbsp; intertwined with electronic&nbsp; devices, electronics and electrical engineering are particularly 
+   relevant fields that can be exciting and fulfilling to explore. These fields deal primarily with the transmission of electrical power, whether it’s going into a computer’s semiconductor or traveling through local power lines.</p><br><br><br><br><br><br>
+
+   <img style="position: relative;bottom: 15cm;left: 5cm;" src="https://www.pcbunlimited.com/blog/wp-content/uploads/2019/04/Printed-Circuit-Board.jpg" alt="" width="900px" height="400px"><br><br><br><br><br>
+
+    <h2 style="color: gold;">Basic Electronics Tutorials</h2><br><br><br><br>
+   
+    <div class="row">
+        <div class="column">
+            <img style="height: 200px;width: 280px;" src="static/images/components.jpg">
+        </div>   
+        <div class="column">
+            <img style="height: 200px;width: 280px;" src="static/images/transformer.jpg">
+        </div>
+        <div class="column">
+            <img style="height: 200px;width: 280px;" src="static/images/amplifier.jpg">
+        </div>
+        <div class="column">
+            <img style="height: 200px;width: 280px;" src="static/images/oscillator.jpg">
+        </div>
+        <div class="column">
+            <img style="height: 200px;width: 280px;" src="static/images/magnetism.jpg">
+        </div>
+        <div class="column">
+            <img style="height: 200px;width: 280px;" src="static/images/iodevices.jpg">
+        </div>
+        <div class="column">
+            <img style="height: 200px;width: 280px;" src="static/images/opamps.jpg">
+        </div>
+        <div class="column">
+            <img style="height: 200px;width: 280px;" src="static/images/system.jpg">
+        </div>
+    </div>
+    <button style="position: relative;bottom: 9cm;left: 14cm; font-size:20pt;background-color: brown; 
+    border-radius: 20px;padding: 10px;color: white;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 15pt;margin-bottom: -4cm;" ><a style="text-decoration: none;color: white;" href="{% url 'myfunc5' %}">Click here for tutorials</a></button>
+
+
+
+            
+    <div style="margin-top:-1cm;" class="footer">
+        <div class="col-1">
+            <h5>USEFUL LINKS</h5>
+            <a href="{% url 'myfunc' %}">Home</a>
+            <a href="{% url 'myfunc3' %}">About Us</a>
+            <a href="">Tutorials</a>
+            <a href="{% url 'myfunc4' %}">Contact Us</a>
+            <a href="{% url 'myfunc1' %}">Sign Up</a>
+            <a href="{% url 'myfunc2' %}">Login</a>
+
+        </div>
+        <div class="col-2">
+            <h5>NEWSLETTER</h5>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input type="email" name="Email" id="" placeholder="Your email address" required><br>
+                <button type="submit">Get in touch</button>
+            </form>
+
+        </div>
+        <div class="col-3">
+            <h5>CONTACT</h5><br>
+            <h5>Thrissur, Kerala <br>India <br> <br>adminelectron@gmail.com</h5>
+            
+
+        </div>
+
+
+    </div>
+        
+    
+    
+</body>
+</html>
