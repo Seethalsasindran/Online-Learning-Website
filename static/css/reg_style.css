@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image:url(https://images.unsplash.com/photo-1594359640393-160e1cfeef0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQwfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  background-position:center;
+  
+}
+.sign-up-form{
+  box-shadow:0 0 3px 5px rgba(0,0,0,0.3);
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  margin:8% auto 0;
+  text-align: center;
+  
+}
+.sign-up-form h1{
+  color: blue;
+  margin-bottom: 30px;
+}
+.input-box{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;margin: 10px 0;
+  width:92%;
+  outline: none;
+  
+}
+
+button{
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  background-color: #1c8adb;
+  
+}
+a{
+  text-decoration: none;
+}
+img{
+  width:70px;
+  margin-top: -50px;
+
+}
+

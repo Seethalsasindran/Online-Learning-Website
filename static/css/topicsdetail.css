@@ -1,0 +1,119 @@
+
+
+body{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 20px 20px;
+    margin-right: 80px;
+    
+    
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  
+}
+h2{
+    font-size: 25px;
+}
+p{
+    text-align: justify;
+    line-height: 1.7;
+
+    
+    
+}
+.footer{
+    margin-top: 150px;
+    width: 75%;
+    padding: 100px 15%;
+    background: #333;
+    color: white;
+    display: flex;
+    position: relative;bottom: 2cm;
+    
+    
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow:2;
+}
+.footer div h5{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+h6{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: relative;bottom: 15cm;
+}
+.hero{
+    height: 25vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
+.btn{
+    background-color: #f9004d;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transition: tranform .4s;
+}
+.btn:hover{
+    transform:scale(1.2)
+}
