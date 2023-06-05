@@ -1,2 +1,2 @@
 # Online-Learning-Website
-Created this website using django framework
+Developed this website with django framework
